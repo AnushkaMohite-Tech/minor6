@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickBite - Place Order</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<header>
+    <h1>QuickBite</h1>
+    <p>Place Your Favourite Food Order!</p>
+</header>
+<nav>
+    <a href="/">Home</a>
+    <a href="/menu">Menu</a>
+    <a href="/order">Order</a>
+</nav>
+<div class="container">
+    <h1>Place Your Order</h1>
+    <form action="/order" method="POST">
+        <label>Select Food Item:</label>
+        <br>
+        <select name="food" required>
+            <option value="">-- Select Food --</option>
+            <option value="Pizza">Pizza - ₹250</option>
+            <option value="Burger">Burger - ₹120</option>
+            <option value="Sandwich">Sandwich - ₹100</option>
+            <option value="Pasta">Pasta - ₹180</option>
+        </select>
+        <br>
+        <label>Enter Quantity:</label>
+        <br>
+        <input type="number" name="quantity" min="1" placeholder="Enter quantity" required>
+        <br><br>
+        <button type="submit">Calculate Bill</button>
+    </form>
+</div>
+</body>
+</html>

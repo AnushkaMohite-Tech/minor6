@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickBite - Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<header>
+    <h1>Our Food Menu</h1>
+</header>
+<nav>
+    <a href="/">Home</a>
+    <a href="/menu">Menu</a>
+    <a href="/order">Order</a>
+</nav>
+<div class="container">
+    <h1>Available Items</h1>
+    <p>🍕 Pizza - ₹250</p>
+    <p>🍔 Burger - ₹120</p>
+    <p>🥪 Sandwich - ₹100</p>
+    <p>🍝 Pasta - ₹180</p>
+    <a href="/order" class="button">Place Your Order</a>
+</div>
+</body>
+</html>
